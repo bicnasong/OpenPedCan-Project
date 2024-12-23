@@ -113,10 +113,10 @@ resultsDir <- "results"
 if (!dir.exists(resultsDir)) {
   dir.create(resultsDir)
 }
-ependFile <- file.path(resultsDir, "fusion_summary_ependymoma_foi.tsv")
-embryFile <- file.path(resultsDir, "fusion_summary_embryonal_foi.tsv")
-ewingsFile <- file.path(resultsDir, "fusion_summary_ewings_foi.tsv")
-lgg_hggFile <- file.path(resultsDir, "fusion_summary_lgg_hgg_foi.tsv")
+ependFile <- file.path(resultsDir, "fusion_summary_ependymoma_foi_new.tsv")
+embryFile <- file.path(resultsDir, "fusion_summary_embryonal_foi_new.tsv")
+ewingsFile <- file.path(resultsDir, "fusion_summary_ewings_foi_new.tsv")
+lgg_hggFile <- file.path(resultsDir, "fusion_summary_lgg_hgg_foi_new.tsv")
 ```
 
 ## Fusions and genes of interest
@@ -142,10 +142,10 @@ ependGenes <- c(
 #' 2: Exact match a list of fusions common in Embryonal tumors
 #' as well as fusions containing a particular gene with any other gene
 embryFuses <- c(
+  "EWSR1--PLAGL1",
   "CIC--NUTM1",
   "MN1--BEND2",
-  "MN1--CXXC5",
-  "EWSR1--PLAGL1"
+  "MN1--CXXC5"
 )
 embryGenes <- c(
   "FOXR2",
